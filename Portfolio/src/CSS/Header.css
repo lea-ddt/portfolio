@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding: 20px;
+  background-color: #000000c9;
+  opacity: 0.8;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.lien-header {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  list-style: none;
+  gap: 40px;
+  padding-right: 30px;
+}
+
+.lien-header a:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.lien-header a {
+  font-family: "Montserrat";
+  color: white;
+  opacity: 0.5;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+}
+/* background: linear-gradient(to top, #4a4a6a, #6760b8, #322a7a); */
+.fixed {
+  position: fixed;
+}
+html {
+  scroll-behavior: smooth;
+}

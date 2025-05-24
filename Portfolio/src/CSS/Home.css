@@ -1,0 +1,215 @@
+.title {
+  display: flex;
+  justify-content: center;
+  font-family: montserrat;
+  margin: 30px;
+  font-size: 30px;
+  font-weight: 500;
+  color: #595959;
+}
+
+.highlight {
+  color: #a1a7d5;
+}
+
+.présentation {
+  position: relative;
+  background-image: url("../assets/bureaux.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 1050px;
+}
+
+.background {
+  position: absolute;
+  inset: 0;
+  background-color: #000000c9;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.text-presentation {
+  position: absolute;
+  top: 63%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  color: #d8d8d8;
+  font-size: 65px;
+  font-family: montserrat;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.text-presentation button {
+  border-radius: 20px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  background-color: #cac1cd;
+  font-family: montserrat;
+  font-weight: 700;
+  font-size: 16px;
+  transition: 0.2s ease;
+}
+
+.text-presentation button:hover {
+  background-color: #757cb1;
+}
+
+.text-presentation p {
+  margin: 0;
+}
+
+.portfolio {
+  background-color: hsl(244, 59%, 94%);
+  padding: 85px 45px 85px 45px;
+}
+
+#Portfolio {
+  margin-top: 50px;
+}
+
+[id]::before {
+  content: "";
+  display: block;
+  height: 91px;
+  margin-top: -100px; /* Décalage vers le haut pour compenser */
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.text-apropos {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.title-white {
+  color: white;
+  margin: 40px;
+}
+
+.text-apropos img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.competences {
+  border: 2px solid #000000c9;
+  margin: 30px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.propos-de-moi .paragraphe-propos {
+  border: 2px solid #000000c9;
+  margin: 30px;
+  border-radius: 5px;
+  padding: 30px;
+  height: 300px;
+  font-family: montserrat;
+  word-spacing: 5px;
+  font-size: 16.5px;
+  overflow: auto;
+}
+
+.paragraphe-propos a {
+  border-radius: 20px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  background-color: #e9d7ef;
+  font-family: montserrat;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  transition: 0.2s ease;
+}
+
+.paragraphe-propos a:hover {
+  background-color: #d0b3d9;
+}
+
+.propos-de-moi .title {
+  justify-content: start;
+}
+
+.text-apropos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-propos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#Contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 85px 0 20px 0;
+}
+
+.contact-btn {
+  padding: 10px 20px;
+  background-color: #968e98;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-family: montserrat;
+  cursor: pointer;
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  transition: 0.2s ease;
+}
+
+.contact-btn:hover {
+  background-color: #997ca4;
+}
+.icon {
+  font-size: 40px;
+}
+
+.lien-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin: 15px;
+  color: #85658f;
+}
+
+.paragraphe-contact {
+  display: flex;
+  align-items: center;
+  font-family: montserrat;
+}
+
+.ensemble-contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.lien-icon-ensemble {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid rgb(93, 93, 93);
+  padding-right: 95px;
+}
+
+.paragraphe-contact {
+  text-align: center;
+  font-family: montserrat;
+  margin-bottom: 70px;
+  max-width: 400px;
+}
