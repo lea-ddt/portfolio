@@ -113,3 +113,22 @@
 .custom-slide:hover .overlay {
   opacity: 1;
 }
+
+@media (max-width: 768px) {
+  .carousel-container {
+    width: 100%;
+  }
+
+  .carousel-container,
+  .carousel-slider,
+  .carousel .slide img {
+    height: 300px;
+  }
+
+  .custom-arrow.left {
+    left: -5px;
+  }
+  .custom-arrow.right {
+    right: -5px;
+  }
+}

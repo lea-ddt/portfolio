@@ -213,3 +213,59 @@
   margin-bottom: 70px;
   max-width: 400px;
 }
+
+@media (max-width: 768px) {
+  .text-presentation {
+    font-size: 45px;
+    top: 65%;
+    left: 40%;
+  }
+
+  .présentation {
+    height: 900px;
+  }
+
+  .flex-propos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .propos-de-moi {
+    order: 1;
+  }
+
+  .competences {
+    order: 2;
+    align-items: center;
+  }
+
+  .propos-de-moi .title {
+    justify-content: center;
+  }
+
+  .text-apropos img {
+    width: 425px;
+  }
+
+  .propos-de-moi .paragraphe-propos {
+    height: auto;
+  }
+
+  .portfolio {
+    padding: 85px 0;
+  }
+
+  .ensemble-contact {
+    flex-direction: column;
+  }
+
+  .ensemble-contact img {
+    display: none;
+  }
+
+  .lien-icon-ensemble {
+    border-top: 1px solid rgb(93, 93, 93);
+    padding: 15px 0 95px 0;
+    border-right: 0;
+  }
+}
