@@ -1,7 +1,6 @@
 import React from "react";
 import CarouselComponent from "../components/Carousel";
 import "../CSS/Home.css";
-import Bureaux from "../assets/bureaux.png";
 import Competences from "../assets/Competences.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -9,6 +8,7 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import avion from "../assets/avion2.png";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+
 const Home = () => {
   const handleScrollToPortfolio = () => {
     const section = document.getElementById("Portfolio");
@@ -57,7 +57,11 @@ const Home = () => {
                   <br />
                 </p>
 
-                <a rel="noreferrer" target="_blank" href="/src/assets/CV.pdf">
+                <a
+                  href="https://lea-ddt.github.io/portfolio/CV.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Voir le CV
                 </a>
               </div>

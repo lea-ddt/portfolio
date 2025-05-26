@@ -14,7 +14,7 @@
 
 .présentation {
   position: relative;
-  background-image: url("../assets/bureaux.png");
+  background-image: url("/bureaux.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -74,7 +74,7 @@
   content: "";
   display: block;
   height: 91px;
-  margin-top: -100px; /* Décalage vers le haut pour compenser */
+  margin-top: -100px;
   visibility: hidden;
   pointer-events: none;
 }
@@ -218,11 +218,11 @@
   .text-presentation {
     font-size: 45px;
     top: 65%;
-    left: 40%;
+    left: 50%;
   }
 
   .présentation {
-    height: 900px;
+    height: 130vh;
   }
 
   .flex-propos {
@@ -244,7 +244,8 @@
   }
 
   .text-apropos img {
-    width: 425px;
+    width: 250px;
+    height: 185px;
   }
 
   .propos-de-moi .paragraphe-propos {

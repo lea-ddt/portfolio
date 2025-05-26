@@ -17,7 +17,7 @@
   align-items: end;
   list-style: none;
   gap: 40px;
-  padding-right: 30px;
+  padding-right: 60px;
 }
 
 .lien-header a:hover {
@@ -42,4 +42,14 @@ body {
 }
 html {
   scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  .lien-header a {
+    font-size: 13px;
+  }
+
+  .lien-header {
+    gap: 25px;
+  }
 }
