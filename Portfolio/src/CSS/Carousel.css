@@ -1,6 +1,7 @@
 .carousel {
   display: flex;
   justify-content: center;
+  height: 100%;
 }
 
 .carousel-container {
@@ -20,7 +21,7 @@
 }
 
 .carousel-slider {
-  height: 415px;
+  height: 100%;
   border-radius: 25px;
   width: 65%;
 }
@@ -106,13 +107,14 @@
   opacity: 0;
   font-family: Montserrat;
   text-align: center;
-  padding: 20px;
+  padding: 20px 70px;
   transition: opacity 0.3s ease;
+  z-index: 2;
 }
 
 .overlay h2,
 .overlay p {
-  margin: 10px 0 10px 0;
+  margin: 10px 0;
 }
 
 .overlay .technologies {
@@ -130,6 +132,7 @@
   background-color: rgb(227, 227, 227);
   border-radius: 20px;
   padding: 10px;
+  margin-top: 10px;
 }
 
 .technologies span {
@@ -141,21 +144,83 @@
   font-size: 14px;
 }
 
+.mobile-overlay {
+  position: relative !important;
+  opacity: 1 !important;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 10px;
+  height: auto;
+  text-align: left;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 1;
+}
+
 @media (max-width: 768px) {
   .carousel-container {
     width: 100%;
+    height: auto;
   }
 
-  .carousel-container,
-  .carousel-slider,
+  .carousel .slide {
+    overflow: visible !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .custom-slide {
+    overflow: visible !important;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border-radius: 25px;
+  }
+
   .carousel .slide img {
-    height: 300px;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .overlay {
+    position: static !important;
+    opacity: 1 !important;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 15px 15px 3px 15px;
+    height: auto;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 1 !important;
+    border-radius: 0 0 25px 25px;
+  }
+
+  .overlay h2,
+  .overlay p,
+  .overlay a {
+    font-size: 12px;
+    margin: 4px 0;
+  }
+
+  .overlay a {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .technologies span {
+    font-size: 10px;
+    padding: 4px 6px;
   }
 
   .custom-arrow.left {
-    left: -5px;
+    left: 5px;
+    font-size: 40px;
   }
+
   .custom-arrow.right {
-    right: -5px;
+    right: 5px;
+    font-size: 40px;
   }
 }

@@ -5,7 +5,7 @@ import Competences from "../assets/Competences.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import avion from "../assets/avion2.png";
+import pigeon from "../assets/pigeons.png";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -35,7 +35,7 @@ const Home = () => {
           <p className="title-white">À PROPOS DE MOI</p>
           <div className="flex-propos">
             <div className="competences">
-              <p className="title">COMPETENCES</p>
+              <p className="title">COMPÉTENCES</p>
               <img src={Competences} alt="logo de différentes compétences" />
             </div>
             <div className="propos-de-moi">
@@ -48,11 +48,14 @@ const Home = () => {
                   une reconversion professionnelle afin d’apprendre le métier.
                   <br />
                   <br />
-                  Au cours de ma formation, j’ai développé de solides
-                  compétences en HTML, CSS, JavaScript et React. J’ai également
-                  mené à bien plusieurs projets, notamment la création de sites
-                  web à partir de maquettes, l’optimisation des performances et
-                  du référencement (SEO), ainsi que le débogage d’applications.
+                  Au cours de ma formation j’ai pu découvrir différents styles
+                  de languages et en affronté les difficultés. Plus
+                  spécifiquement en JavaScript qui en ai un très complet.
+                  <br />
+                  J’ai également mené à bien plusieurs projets, notamment la
+                  création de sites web à partir de maquettes, l’optimisation
+                  des performances et du référencement (SEO), ainsi que le
+                  débogage d’applications.
                   <br />
                   <br />
                 </p>
@@ -72,12 +75,13 @@ const Home = () => {
         <div id="Portfolio">
           <div className="portfolio">
             <p className="title">PORTFOLIO</p>
+
             <CarouselComponent />
           </div>
         </div>
 
         <div id="Contact">
-          <p className="title">CONTACT</p>
+          <p className="title">CONTACTS</p>
           <div className="ensemble-contact">
             <div className="lien-icon-ensemble">
               <p className="paragraphe-contact">
@@ -107,8 +111,8 @@ const Home = () => {
                 </a>
               </div>
             </div>
-            <div>
-              <img src={avion} alt="dessin d'un d'avion en papier" />
+            <div className="contact-photo">
+              <img src={pigeon} alt="dessin d'un d'avion en papier" />
             </div>
           </div>
         </div>

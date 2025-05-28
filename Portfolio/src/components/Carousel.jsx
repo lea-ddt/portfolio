@@ -12,6 +12,7 @@ import Kasa from "../assets/Kasa.png";
 import Booki from "../assets/Booki.png";
 import Nina from "../assets/Nina-carducci.png";
 import Sophie from "../assets/Sophie-bluel.png";
+import { useEffect } from "react";
 
 const CarouselComponent = () => {
   const pictures = [
@@ -54,6 +55,15 @@ const CarouselComponent = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const goToPrev = () => {
     setCurrentIndex((prevIndex) =>
@@ -89,10 +99,10 @@ const CarouselComponent = () => {
             <div className="custom-slide" key={index}>
               <img src={item.image} alt={item.title} />
               <div className="overlay">
+                {" "}
                 <h2>{item.title}</h2>
                 <p>{item.description}</p>
                 <p>{item.projets}</p>
-                <p>Technologies :</p>
                 <p className="technologies">
                   {item.technologies.split(" ").map((word, i) => (
                     <span key={i}>{word}</span>

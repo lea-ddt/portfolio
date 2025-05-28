@@ -36,7 +36,7 @@
 body {
   margin: 0;
 }
-/* background: linear-gradient(to top, #4a4a6a, #6760b8, #322a7a); */
+
 .fixed {
   position: fixed;
 }
@@ -50,6 +50,6 @@ html {
   }
 
   .lien-header {
-    gap: 25px;
+    gap: 15px;
   }
 }
