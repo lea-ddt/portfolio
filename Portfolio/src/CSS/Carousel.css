@@ -156,6 +156,10 @@
   z-index: 1;
 }
 
+.carousel-root {
+  width: 80%;
+}
+
 @media (max-width: 768px) {
   .carousel-container {
     width: 100%;
@@ -173,7 +177,6 @@
     overflow: visible !important;
     display: flex;
     flex-direction: column;
-    width: 40%;
     border-radius: 25px;
   }
 
@@ -187,14 +190,15 @@
   .overlay {
     position: static !important;
     opacity: 1 !important;
-    background: rgba(0, 0, 0, 0.85);
-    padding: 15px 15px 3px 15px;
+    background: hsl(244deg 100% 98.46%);
+    padding: 15px;
     height: auto;
     text-align: left;
     align-items: flex-start;
     justify-content: flex-start;
     z-index: 1 !important;
     border-radius: 0 0 25px 25px;
+    color: black;
   }
 
   .overlay h2,
@@ -207,11 +211,14 @@
   .overlay a {
     padding: 6px 10px;
     font-size: 12px;
+    background-color: rgb(152 152 152);
+    color: rgb(236 236 236);
   }
 
   .technologies span {
     font-size: 10px;
     padding: 4px 6px;
+    background-color: #d4d4d4;
   }
 
   .custom-arrow.left {
