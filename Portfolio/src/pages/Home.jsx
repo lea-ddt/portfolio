@@ -60,11 +60,7 @@ const Home = () => {
                   <br />
                 </p>
 
-                <a
-                  href="https://lea-ddt.github.io/portfolio/CV.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href="/CV.pdf" target="_blank" rel="noopener noreferrer">
                   Voir le CV
                 </a>
               </div>
